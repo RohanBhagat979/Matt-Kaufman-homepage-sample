@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    margin-top: 1em;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+/* navbar starts */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 60%;
+    margin: 0em auto;
+    padding: 1em 0em;
+}
+.brandTitle{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.navLinks ul{
+    display: flex;
+}
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    color: #487eb0;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.6em 1em;
+    
+    
+}
+.toggleButton{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(179, 194, 176);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    /* display: flex; */
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.bar{
+    width: 100%;
+    height: 5px;
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+}
+/* navbar ends */
+
+
+.container{
+    width: 60%;  
+    margin: 1em auto;
+    margin-top: 2em;
+}
+
+
+/* intro starts */
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profilePic{
+    width: 15%;
+    
+}
+.profilePic img{
+    width: 100%; 
+    border-radius: 100px;
+}
+.intro p{
+    width: 81%;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+}
+/* intro Ends */
+
+/* main Starts */
+
+
+
+.content h1{
+    margin: 1.8em 0em;
+    font-size: 3rem;
+    line-height: 1.2em;
+    color: #293649;
+}
+.content h2{
+    font-size: 2rem;
+    line-height: 1em;
+    color: #293649;
+    margin: 1em 0em;
+}
+.content p{
+    font-size: 1.4rem;
+    margin-bottom: 1.5em; 
+    line-height: 1.5em ;
+}
+
+/* email section */
+.email{
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 1em 0em;
+    border-radius: 5px;
+}
+.email h2{
+    padding-top: 1em;
+}
+
+#emailAddressBar{
+    height: 3em;
+    width: 40%;
+    border-radius: 5px;
+    padding-left: 1em;
+    border: none;
+}
+.email button{
+    padding: 0.6em 1em;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(39, 182, 39);
+    color: white;
+}
+#unscribeBtn{
+    margin:2em 0em ;
+    padding-bottom: 1em;
+}
+
+
+/* main ends */
+
+
+/* footer starts */
+.footerWrap{
+    padding: 2em;
+    text-align: center;
+    color: rgb(247, 155, 155);
+}
+.footerLinks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em 0em;
+}
+.footerLinks a{
+    text-decoration: none;
+    padding: 1em 1.2em;
+}
+
+
+/* footer Ends */
+
+
+
+
+
+/* responsive */
+
+@media (max-width:700px) {
+
+                        /* navbar */
+    nav{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .navLinks{
+        width: 100%;
+        align-items: flex-start;
+        display: none; /* not gonna show till the button is clicked*/
+    }
+    .navLinks ul{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .navLinks li{
+        width: 100%;
+        text-align: center;
+    }.navLinks a{
+        width: 100%;
+    }
+    .toggleButton{
+        display: flex;
+    }
+    .active{
+        display: flex;
+    }
+
+
+    .container{
+        width: 95%;  
+        margin: 1em auto;
+        margin-top: 2em;
+    }
+    
+}
